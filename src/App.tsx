@@ -11,6 +11,10 @@ import SplitPane from './components/split-pane/SplitPane';
 import Timeline from "./components/timeline/Timeline";
 
 import PlayIcon from './icons/play.svg';
+import CameraIcon from './icons/camera.svg';
+
+
+import Draggable from 'react-draggable';
 
 const App = () => {
 
@@ -50,8 +54,38 @@ const App = () => {
               <Timeline />
             </div>
             <div className={styles['interact-bar']}>
-              <div className={styles['file-explorer']}></div>
-              <div className={styles['stage']}></div>
+              <div className={styles['file-explorer']}>
+                <div className={styles['file']}>
+                  <img src={CameraIcon} />
+                  <p className={styles['file-name']}>beep-boop.mp4</p>
+                </div>
+              </div>
+              <div className={styles['stage']}>
+                <div className={styles['track']}>
+                  <Draggable
+                    axis="x"
+                    defaultPosition={{x: 150, y: 0}}
+                    scale={1}
+                    grid={[15, 0]}
+                    bounds={'parent'}
+                  >
+                    <div className={styles['video']} /></Draggable>
+                </div>
+                <div className={styles['track']}>
+                  <Draggable
+                    axis="x"
+                    defaultPosition={{x: 250, y: 0}}
+                    scale={1}
+                    grid={[15, 0]}
+                    bounds={'parent'}>
+                    <div className={styles['audio']}>
+                      <div className={styles['audio-overlay']} />
+                      <div className={`${styles['audio-overlay']} ${styles['offset']}`} />
+                    </div>
+                  </Draggable>
+                </div>
+                <div className={styles['track']}></div>
+              </div>
             </div>
           </div>
         }

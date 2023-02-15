@@ -4,6 +4,7 @@
   width: 100%;
   flex: 1;
   border-bottom: 1px solid #303034;
+  position: relative;
 }
 
 .timeline-division {
@@ -34,4 +35,28 @@
 .timestep > p {
   color: #91919C;
   font-size: 0.9vw;
+}
+
+.cursor {
+  position: absolute;
+  width: 1.3vw;
+  height: 1.3vw;
+  border-radius: 50%;
+  background-color: #FF7162;
+  bottom: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.cursor-line {
+  position: relative;
+  top: 0;
+  width: 1px;
+  height: 26.01vh;
+  margin-top: 1.3vw;
+  margin-left: 0.6vw;
+  background-color: #FF7162;
+  cursor: pointer;
+  z-index: 3;
+  overflow-y: hidden;
 }
