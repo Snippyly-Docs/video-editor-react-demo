@@ -1,0 +1,19 @@
+.topbar {
+  height: 6.73vh;
+  background-color: #141416;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main-window {
+  height: 61.06vh;
+  background-color: #222226;
+  border-bottom-left-radius: 29px;
+  border-bottom-right-radius: 29px;
+}
+
+.bottom-pane {
+  height: calc(100vh - 67.79vh);
+  background-color: #141416;
+}

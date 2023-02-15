@@ -3,6 +3,12 @@ import { useSnippylyClient } from '@snippyly/react';
 import { generateUserData } from './util/user';
 import styles from './App.module.css';
 
+import Layout from './components/layout/Layout';
+import Breadcrumbs from './components/breadcrumbs/Breadcrumbs';
+import Explorer from './components/explorer/Explorer';
+import Preview from './components/preview/Preview';
+import SplitPane from './components/split-pane/SplitPane';
+
 const App = () => {
 
   const { client } = useSnippylyClient();
@@ -16,7 +22,22 @@ const App = () => {
 
   }, [client]);
 
-  return <div className={styles['app-container']}>My Snippyly App</div>;
+  return (
+    <div className={styles['app-container']}>
+      <Layout
+        topbar={<Breadcrumbs />}
+        mainWindow={
+          <SplitPane
+            left={<Explorer />}
+            right={<Preview />}
+          />
+        }
+        bottomPane={
+          <></>
+        }
+      />
+    </div>
+  );
 };
 
 export default App;

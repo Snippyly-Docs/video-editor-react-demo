@@ -1,0 +1,16 @@
+.preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview > img {
+  width: calc(100% - 3vw);
+  margin-right: 3vw;
+  height: calc(100% - 12vh);
+}
+
+
+.preview {
+  width: calc(100vw - 28vw);
+}
