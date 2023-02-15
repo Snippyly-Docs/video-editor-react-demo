@@ -1,0 +1,36 @@
+
+.timeline {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  border-bottom: 1px solid #303034;
+}
+
+.timeline-division {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.subdivision {
+  flex: 1;
+  height: 15%;
+  border-right: 1px solid #303034;
+}
+
+.timeline-division:last-of-type .subdivision:last-child {
+  border-right: none;
+}
+
+.timestep {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.timestep > p {
+  color: #91919C;
+}
