@@ -127,7 +127,7 @@
   border-radius: 8px;
   padding-bottom: 5vh;
   height: calc(100% - 10vh);
-  width: 34%;
+  width: 20%;
   /* margin-left: 15vw; */
   cursor: pointer;
   position: relative;
@@ -135,18 +135,16 @@
 
 .audio-overlay {
   position: absolute;
+  top: 0;
   left: 1vw;
-  right: 50%;
-  top: 1.3vh;
-  bottom: 0.5vh;
+  right: 1vw;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url('./icons/timeline.svg');
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   z-index: 2;
-}
-
-.offset {
-  left: 46%;
-  right: 1vw;
-  transform: scaleX(-1);
 }

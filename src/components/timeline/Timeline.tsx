@@ -13,7 +13,7 @@ const Timeline = () => {
         grid={[15, 0]}
         bounds={'parent'}>
         <div className={styles['cursor']}>
-        <div className={styles['cursor-line']}></div></div>
+          <div className={styles['cursor-line']}></div></div>
       </Draggable>
       <div className={styles['timeline-division']}>
         <div className={styles['timestep']}>

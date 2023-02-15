@@ -80,7 +80,6 @@ const App = () => {
                     bounds={'parent'}>
                     <div className={styles['audio']}>
                       <div className={styles['audio-overlay']} />
-                      <div className={`${styles['audio-overlay']} ${styles['offset']}`} />
                     </div>
                   </Draggable>
                 </div>
