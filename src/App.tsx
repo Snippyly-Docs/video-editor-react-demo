@@ -13,6 +13,8 @@ import Timeline from "./components/timeline/Timeline";
 import PlayIcon from './icons/play.svg';
 import CameraIcon from './icons/camera.svg';
 
+import { SnippylyPresence } from "@snippyly/react";
+
 
 import Draggable from 'react-draggable';
 
@@ -26,13 +28,21 @@ const App = () => {
 
     const user = generateUserData();
     client.identify(user);
+    client.setDocumentId('project_id');
 
   }, [client]);
 
   return (
     <div className={styles['app-container']}>
       <Layout
-        topbar={<Breadcrumbs />}
+        topbar={
+          <div className={styles['topbar']}>
+            <Breadcrumbs />
+            <div className={styles['presence-container']}>
+              <SnippylyPresence />
+            </div>
+          </div>
+        }
         mainWindow={
           <SplitPane
             left={<Explorer />}
@@ -64,7 +74,7 @@ const App = () => {
                 <div className={styles['track']}>
                   <Draggable
                     axis="x"
-                    defaultPosition={{x: 150, y: 0}}
+                    defaultPosition={{ x: 150, y: 0 }}
                     scale={1}
                     grid={[15, 0]}
                     bounds={'parent'}
@@ -74,7 +84,7 @@ const App = () => {
                 <div className={styles['track']}>
                   <Draggable
                     axis="x"
-                    defaultPosition={{x: 250, y: 0}}
+                    defaultPosition={{ x: 250, y: 0 }}
                     scale={1}
                     grid={[15, 0]}
                     bounds={'parent'}>
