@@ -28,7 +28,7 @@ const App = () => {
 
     const user = generateUserData();
     client.identify(user);
-    client.setDocumentId('project_id');
+    client.setDocumentId('video_project_id');
 
   }, [client]);
 
