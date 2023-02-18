@@ -18,6 +18,10 @@ import { SnippylyPresence } from "@snippyly/react";
 
 const App = () => {
 
+  /**
+   * Snippyly Code Example
+   * Initializes the Snippyly SDK.
+   */
   const { client } = useSnippylyClient();
 
   useEffect(() => {
@@ -36,6 +40,10 @@ const App = () => {
         topbar={
           <div className={styles['topbar']}>
             <Breadcrumbs />
+            {/**
+             * Snippyly Code Example
+             * Feature: Presence
+             */}
             <div className={styles['presence-container']}>
               <SnippylyPresence />
             </div>
