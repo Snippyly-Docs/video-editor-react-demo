@@ -1,0 +1,24 @@
+
+
+.file-explorer {
+  width: calc(28vw - 3vw);
+  border-right: 1px solid #303034;
+}
+
+
+.file {
+  width: 100%;
+  height: 7.69vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 2vw;
+  cursor: pointer
+}
+
+.file-name {
+  color: #E5E5E9;
+  margin-left: 0.7vw;
+  font-weight: 200;
+  font-size: 0.9vw;
+}

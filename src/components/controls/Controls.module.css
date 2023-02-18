@@ -1,0 +1,47 @@
+
+.play-controls {
+  width: calc(28vw - 3vw);
+  border-right: 1px solid #303034;
+  border-bottom: 1px solid #303034;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.play-button-container {
+  margin-left: 3vw;
+  width: 2.5vw;
+  height: 2.5vw;
+  background-color: #222226;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.time-controls {
+  display: flex;
+  gap: 0.5vw;
+  margin-right: 0.8vw;
+}
+
+.time-controls > div {
+  color: #E5E5E9;
+  background-color: #303034;
+  width: 2.5vw;
+  height: 2.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  padding-left: 0.8vw;
+  padding-right: 0.8vw;
+  font-size: 0.9vw;
+}
+
+.speed-button {
+  padding-left: 0.1vw !important;
+  padding-right: 0.1vw !important;
+}
