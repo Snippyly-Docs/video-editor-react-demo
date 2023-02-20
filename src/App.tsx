@@ -13,7 +13,14 @@ import Controls from "./components/controls/Controls";
 import FileExplorer from "./components/file-explorer/FileExplorer";
 import Stage from "./components/stage/Stage";
 
-import { SnippylyPresence } from "@snippyly/react";
+import { 
+  SnippylyPresence,
+  SnippylyCommentTool,
+  SnippylySidebarButton,
+  SnippylyRecorderTool,
+  SnippylyTagTool,
+  SnippylyHuddleTool
+} from "@snippyly/react";
 
 
 const App = () => {
@@ -43,8 +50,18 @@ const App = () => {
             {/**
              * Snippyly Code Example
              * Feature: Presence
+             * Feature: Comments -- Step #2
+             * Feature: Comments Sidebar -- Step #2
+             * Feature: Recorder -- Step #2
+             * Feature: Tags -- Step #2
+             * Feature: Huddle -- Step #2
              */}
             <div className={styles['presence-container']}>
+              <SnippylyCommentTool />
+              <SnippylyTagTool />
+              <SnippylyRecorderTool type="all" />
+              <SnippylyHuddleTool type="all" />
+              <SnippylySidebarButton />
               <SnippylyPresence />
             </div>
           </div>

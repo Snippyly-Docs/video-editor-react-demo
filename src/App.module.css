@@ -34,4 +34,9 @@
   justify-content: flex-end;
   align-items: center;
   margin-right: 2.5vw;
+  gap: 1.2vw;
+}
+
+snippyly-comment-tool, snippyly-tag-tool {
+  margin-top: 0.5vh;
 }
