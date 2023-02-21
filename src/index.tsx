@@ -6,7 +6,7 @@ import { SnippylyProvider, SnippylyCursor } from '@snippyly/react';
 const rootContainer = document.getElementById('root');
 const root = createRoot(rootContainer as HTMLElement);
 root.render(
-  <React.StrictMode>
+  <>
     {/**
      * Snippyly Code Example
      * Feature: Live Cursors
@@ -15,5 +15,5 @@ root.render(
       <SnippylyCursor />
       <App />
     </SnippylyProvider>
-  </React.StrictMode>
+  </>
 );
