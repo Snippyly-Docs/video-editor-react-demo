@@ -25,6 +25,23 @@ import {
 
 const App = () => {
 
+  useEffect(() => {
+
+    const isDataReset = window.sessionStorage.getItem('_snippyly_demo_reset');
+
+    if (isDataReset === null) {
+      fetch(
+        "https://us-central1-snippyly-sdk-prod.cloudfunctions.net/resetDemoData",
+        {
+          headers: { "Content-Type": "application/json" },
+          method: "POST",
+          body: JSON.stringify({ documentId: 'video_project_id' }),
+        }
+      );
+      window.sessionStorage.setItem('_snippyly_demo_reset', 'true');
+    }
+  }, []);
+
   /**
    * Snippyly Code Example
    * Initializes the Snippyly SDK.
