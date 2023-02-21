@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/video-editor-react-demo/static/css/main.b249fa5d.css",
-    "main.js": "/video-editor-react-demo/static/js/main.92c64136.js",
+    "main.js": "/video-editor-react-demo/static/js/main.09a52bde.js",
     "static/media/splash.svg": "/video-editor-react-demo/static/media/splash.8c428214508d52955037a9245ce834d4.svg",
     "static/media/timeline.svg": "/video-editor-react-demo/static/media/timeline.46b678743d461139141b.svg",
     "static/media/camera.svg": "/video-editor-react-demo/static/media/camera.66808847a6ff801f043ed2a7bece35c4.svg",
     "index.html": "/video-editor-react-demo/index.html",
     "static/media/play.svg": "/video-editor-react-demo/static/media/play.ca3b4ee0d7b11edc82161925e36a614f.svg",
     "main.b249fa5d.css.map": "/video-editor-react-demo/static/css/main.b249fa5d.css.map",
-    "main.92c64136.js.map": "/video-editor-react-demo/static/js/main.92c64136.js.map"
+    "main.09a52bde.js.map": "/video-editor-react-demo/static/js/main.09a52bde.js.map"
   },
   "entrypoints": [
     "static/css/main.b249fa5d.css",
-    "static/js/main.92c64136.js"
+    "static/js/main.09a52bde.js"
   ]
 }
