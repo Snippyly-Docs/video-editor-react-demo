@@ -1,19 +1,19 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
-import { SnippylyProvider, SnippylyCursor } from '@snippyly/react';
+import { VeltProvider, VeltCursor } from '@veltdev/react';
 
 const rootContainer = document.getElementById('root');
 const root = createRoot(rootContainer as HTMLElement);
 root.render(
   <>
     {/**
-     * Snippyly Code Example
+     * Velt Code Example
      * Feature: Live Cursors
      */}
-    <SnippylyProvider apiKey="WDMgKshFEsPTqvBjUcH3">
-      <SnippylyCursor />
+    <VeltProvider apiKey="WDMgKshFEsPTqvBjUcH3">
+      <VeltCursor />
       <App />
-    </SnippylyProvider>
+    </VeltProvider>
   </>
 );
